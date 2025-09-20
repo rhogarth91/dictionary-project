@@ -5,8 +5,10 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <h2>{props.results.word}</h2>
-          <h3>/{props.results.phonetic}/</h3>
+          <h2>Word: {props.results.word}</h2>
+          <div className="Phonetic-result">
+            Phonetic: {props.results.phonetic}
+          </div>
         </section>
         {props.results.meanings.map(function (meaning, index) {
           return (
