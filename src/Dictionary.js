@@ -41,8 +41,8 @@ export default function Dictionary() {
   }
 
   return (
-    <>
-      <form onSubmit={search} className="Search-form">
+    <div className="Dictionary">
+      <form onSubmit={search}>
         <input
           type="search"
           name="search"
@@ -57,6 +57,6 @@ export default function Dictionary() {
       </form>
       <Results results={results} />
       <Images images={images} />
-    </>
+    </div>
   );
 }
